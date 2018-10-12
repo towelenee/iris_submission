@@ -64,6 +64,7 @@ class model:
             print("ARRGH: number of features in X does not match training data!")
         print("PREDICT: dim(y)= [{:d}, {:d}]").format(num_test_samples, self.num_labels)
         y = np.zeros([num_test_samples, self.num_labels])
+
         return y
 
     def save(self, path="./"):
