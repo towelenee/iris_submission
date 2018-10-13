@@ -1,0 +1,4 @@
+solution.zip
+*.pickle
+*.pyc
+input/*
