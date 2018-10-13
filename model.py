@@ -22,7 +22,7 @@ class model:
         self.num_feat=1
         self.num_labels=1
         self.is_trained=False
-        self.clf = LogisticRegression()
+        # self.clf = LogisticRegression()
 
     def fit(self, X, y):
         '''

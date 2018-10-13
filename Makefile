@@ -1,7 +1,7 @@
 CODABASE := .codalab
 .PHONY: run score pack get_data
 
-all: run
+all: run score
 
 input/iris_train.data:
 	if [[ ! -f input/data.zip ]] ; then \
@@ -15,7 +15,7 @@ clean:
 run: model.py input/iris_train.data
 	python $(CODABASE)/ingestion_program/ingestion.py input output $(CODABASE)/ingestion_program .
 
-score: run
+score:
 	python $(CODABASE)/scoring_program/score.py input output output_score
 
 pack:
