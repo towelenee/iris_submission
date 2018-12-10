@@ -7,6 +7,7 @@ Python2 environment
 
 ## How to use
 
+
 Edit [blob/master/model.py](model.py) and then
 - `make` - to fit and predict model
 - `make score` - score the model
