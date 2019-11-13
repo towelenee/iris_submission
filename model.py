@@ -10,6 +10,13 @@ import pickle
 import numpy as np   # We recommend to use numpy arrays
 from os.path import isfile
 from sklearn.linear_model import LogisticRegression
+from comet_ml import Experiment
+import os
+# Setting the API key (saved as environment variable)
+exp = Experiment(
+    api_key=os.environ.get("COMET_API_KEY"),
+    project_name='comet-examples')
+
 
 
 class model:
